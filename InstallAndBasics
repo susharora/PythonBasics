@@ -1,10 +1,19 @@
 #Install: I started with installing VSCODE from website, next needed a Python interpreter which was downloaded again seperately. VSCODE found the interpreter on its own. 
+
 #Extension: First program written as .py file. 
-#Running programs: either there is 
-  A) Python REPL in python to run commands, seen with >>> at the beginning 
-  B) PowerShell(command line) 
+
+#Running programs: 
+  either there is 
+    A) Python REPL in python to run commands, seen with >>> at the beginning 
+    B) PowerShell(command line) 
+
+#relative path : 
+  syntax: .\ 
+  tells the system look in current path. PS in beginning denotes its PowerShell shell. 
+
 #Path: executable search path in PowerShell -> $env:PATH 
-PS C:\Users\senor\OneDrive - University of Warwick\06-cryptography\06A-Python> $env:PATH
+syntax: PS C:\Users\senor\OneDrive - University of Warwick\06-cryptography\06A-Python> $env:PATH
+result below: 
 C:\Users\senor\AppData\Local\Programs\Microsoft VS Code;
 C:\Windows\system32;
 C:\Windows;
@@ -19,9 +28,11 @@ C:\Users\senor\AppData\Local\Programs\Microsoft VS Code\bin;
 c:\Users\senor\.vscode\extensions\ms-python.debugpy-2025.18.0-win32-x64\bundled\scripts\noConfigScripts
 
 #python version - where python 
+
 #Command_01: one option is & ".venv\Scripts\python.exe" "01Example.py" in powershell. The & means execute this. 
 
-# sys.path when using print(sys.path)
+# PATH: What is it ? How to see them ?
+ output of sys.path when using print(sys.path)
 'c:\\Users\\senor\\OneDrive - University of Warwick\\06-cryptography\\06A-Python', 
 'C:\\Users\\senor\\AppData\\Local\\Python\\pythoncore-3.14-64\\python314.zip', 
 'C:\\Users\\senor\\AppData\\Local\\Python\\pythoncore-3.14-64\\DLLs', 
@@ -29,3 +40,16 @@ c:\Users\senor\.vscode\extensions\ms-python.debugpy-2025.18.0-win32-x64\bundled\
 'C:\\Users\\senor\\AppData\\Local\\Python\\pythoncore-3.14-64', 
 'C:\\Users\\senor\\OneDrive - University of Warwick\\06-cryptography\\06A-Python\\.venv', 
 'C:\\Users\\senor\\OneDrive - University of Warwick\\06-cryptography\\06A-Python\\.venv\\Lib\\site-packages']
+
+# Virtual environments: 
+1. create a virtual environment using VENV ( comes with python) , or CONDA - creates a folder in the same place and it will have a name too which has been given as aurgument. 
+  syntax: python -m venv tutorial-env 
+  this creates 800 something files in the folder, under 3 sub folders. Include, Lib and Scripts. 
+  A copy of python interpreter is also kept here
+2. Activating the virtual environment. This can be done by running a bash script which has been preloaded in Scripts folder.
+  syntax: tutorial-env\Scripts\activate
+3. Security error based on Execution Policy 135170. give access to run .ps1 files which are power shell files 
+  syntax: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser 
+  The possible values of -ExecutionPolicy are RemoteSigned, Restricted and unrestricted.
+4. Use PIP ( Preferred Installer Program) to add packages that you need just for this specific project.   
+
