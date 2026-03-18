@@ -1,3 +1,32 @@
+
+https://jobs.natwestgroup.com/jobs/17464944-senior-security-engineer?bid=370
+The skills you'll need
+We’re looking for an experienced Azure cloud security and SecOps professional with hands-on ownership of security design, detection, and incident response in modern DevSecOps environments. What’s more, you’re able to communicate technical concepts in a simple way for non-technical people.
+We’ll also expect you to have:
+Azure experience, including hands-on ownership of security engineering and operations using Microsoft Defender for Cloud, Microsoft Sentinel (SIEM/SOAR), Azure Policy, and continuous compliance monitoring (e.g., PCI DSS)
+Strong knowledge of Azure DevOps, GitHub Advanced Security, CI/CD integration, and compliance frameworks such as GDPR and PCI DSS
+Hands-on experience securing containerised workloads and AKS, including vulnerability management, runtime security, and Infrastructure as Code using Bicep
+Experience of information security policies and practices within the financial sector
+Strong stakeholder management skills and communication skills
+Here’s just some of the technologies we use.
+Front end
+JavaScript logoJavaScript
+ReactJS logoReactJS
+AngularJS LogoAngularJS
+Back end
+Python logoPython
+Java logoJava
+Microsoft Dynamics logoMicrosoft Dynamics
+DevOps
+AWS logoAWS
+GitLab logoGitLab
+Google Cloud Platform logoGoogle Cloud Platform
+Data
+Kafka logoKafka
+Hadoop logoHadoop
+PostgreSQL logoPostgreSQL
+Snowflake logoSnowflake
+------------------------------------------------------
 Threat modelling and risk assessments,
 Working knowledge of secure coding principles (OWASP and OWASP mobile, SANS...),
 Experience with designing and administering identity management (authentication and authorisation including policy enforcement points, token services, protocols such as OAuth2),
