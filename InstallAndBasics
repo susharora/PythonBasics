@@ -7,6 +7,11 @@
     A) Python REPL in python to run commands, seen with >>> at the beginning 
     B) PowerShell(command line) 
 
+#Terminal:
+  It can open as both PS (Power Shell) or CMD (command.exe file). 
+  Default : Power Shell is the default integrated terminal in Visual Code. 
+  FYI - Security wise, Power Shell execution policy controls Power Shell. 
+  
 #relative path : 
   syntax: .\ 
   tells the system look in current path. PS in beginning denotes its PowerShell shell. 
@@ -51,5 +56,9 @@ c:\Users\senor\.vscode\extensions\ms-python.debugpy-2025.18.0-win32-x64\bundled\
 3. Security error based on Execution Policy 135170. give access to run .ps1 files which are power shell files 
   syntax: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser 
   The possible values of -ExecutionPolicy are RemoteSigned, Restricted and unrestricted.
-4. Use PIP ( Preferred Installer Program) to add packages that you need just for this specific project.   
+4. This is MITRE T1059 - Command & Scripting Interpreter. 
+  * Malicious .ps1 scripts  
+  * Execution Policy Bypass Technique
+  * Living-off-the-land attacks (LOLbins)
+5. Use PIP ( Preferred Installer Program) to add packages that you need just for this specific project.   
 
