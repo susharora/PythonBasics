@@ -1,3 +1,3 @@
 # Install Python on windows
 
-### The install notes [.\pythonFunctions]
+### The install notes [./pythonFunctions]
